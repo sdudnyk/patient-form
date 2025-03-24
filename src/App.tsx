@@ -19,7 +19,7 @@ function App() {
       <Form
         onSubmit={onSubmit}
         validate={joiValidate(patientSchema)}
-        render={({ handleSubmit, form,  /*submitting, pristine, values */ }) => (
+        render={({ handleSubmit, form }) => (
           <form onSubmit={handleSubmit} style={{ padding: '20px' }}>
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={3}>
